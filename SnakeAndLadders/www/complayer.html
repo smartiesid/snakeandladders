@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Player</title>
+    <link href="css/complayer.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="leftside" align="center">
+            <div class="leftside1">    
+                <div id="player1">Player1 : </div>
+                <div style="display:flex; justify-content: center;">
+                    <button  id="player1Button" style="margin:15%" class="button" onClick="player1_roll()">Roll</button>
+                    <div  id="play1" class="youDraw" style="margin:15%">0</div><br />
+                </div>
+                    <div id="player1turn" class="playerturn">Player1's turn</div>
+               
+            </div>
+            <br />
+            <div class="leftside2">
+                <div id="player2">Computer : </div>
+                <div style="display:flex; justify-content: center">
+                    <button id="player2Button" style="margin:15%" class="button" onClick="player2_roll()">Roll</button>
+                    <div id="play2" class="youDraw" style="margin:15%">0</div><br />
+                </div>
+                <div id="player2turn" class="playerturn"></div>
+            </div>
+        </div>
+        <div class="center">
+             <table background="images/snake_and_ladder_background.jpg" style="background-repeat: no-repeat; background-size:100% 100%">
+                    <tr>
+                        <td id="td100"><img id="p100" class="avtar1"/><img id="c100" class="avtar2" /></td>
+                        <td id="td99"><img id="p99" class="avtar1"/><img id="c99" class="avtar2" /></td>
+                        <td id="td98"><img id="p98" class="avtar1"/><img id="c98" class="avtar2" /></td>
+                        <td id="td97"><img id="p97" class="avtar1"/><img id="c97" class="avtar2" /></td>
+                        <td id="td96"><img id="p96" class="avtar1"/><img id="c96" class="avtar2" /></td>
+                        <td id="td95"><img id="p95" class="avtar1"/><img id="c95" class="avtar2" /></td>
+                        <td id="td94"><img id="p94" class="avtar1"/><img id="c94" class="avtar2" /></td>
+                        <td id="td93"><img id="p93" class="avtar1"/><img id="c93" class="avtar2" /></td>
+                        <td id="td92"><img id="p92" class="avtar1"/><img id="c92" class="avtar2" /></td>
+                        <td id="td91"><img id="p91" class="avtar1"/><img id="c91" class="avtar2" /></td>
+
+                    </tr>
+                    <tr>
+                        <td id="td81"><img id="p81" class="avtar1"/><img id="c81" class="avtar2" /></td>
+                        <td id="td82"><img id="p82" class="avtar1"/><img id="c82" class="avtar2" /></td>
+                        <td id="td83"><img id="p83" class="avtar1"/><img id="c83" class="avtar2" /></td>
+                        <td id="td84"><img id="p84" class="avtar1"/><img id="c84" class="avtar2" /></td>
+                        <td id="td85"><img id="p85" class="avtar1"/><img id="c85" class="avtar2" /></td>
+                        <td id="td86"><img id="p86" class="avtar1"/><img id="c86" class="avtar2" /></td>
+                        <td id="td87"><img id="p87" class="avtar1"/><img id="c87" class="avtar2" /></td>
+                        <td id="td88"><img id="p88" class="avtar1"/><img id="c88" class="avtar2" /></td>
+                        <td id="td89"><img id="p89" class="avtar1"/><img id="c89" class="avtar2" /></td>
+                        <td id="td90"><img id="p90" class="avtar1"/><img id="c90" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td80"><img id="p80" class="avtar1"/><img id="c80" class="avtar2" /></td>
+                        <td id="td79"><img id="p79" class="avtar1"/><img id="c79" class="avtar2" /></td>
+                        <td id="td78"><img id="p78" class="avtar1"/><img id="c78" class="avtar2" /></td>
+                        <td id="td77"><img id="p77" class="avtar1"/><img id="c77" class="avtar2" /></td>
+                        <td id="td76"><img id="p76" class="avtar1"/><img id="c76" class="avtar2" /></td>
+                        <td id="td75"><img id="p75" class="avtar1"/><img id="c75" class="avtar2" /></td>
+                        <td id="td74"><img id="p74" class="avtar1"/><img id="c74" class="avtar2" /></td>
+                        <td id="td73"><img id="p73" class="avtar1"/><img id="c73" class="avtar2" /></td>
+                        <td id="td72"><img id="p72" class="avtar1"/><img id="c72" class="avtar2" /></td>
+                        <td id="td71"><img id="p71" class="avtar1"/><img id="c71" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td61"><img id="p61" class="avtar1"/><img id="c61" class="avtar2" /></td>
+                        <td id="td62"><img id="p62" class="avtar1"/><img id="c62" class="avtar2" /></td>
+                        <td id="td63"><img id="p63" class="avtar1"/><img id="c63" class="avtar2" /></td>
+                        <td id="td64"><img id="p64" class="avtar1"/><img id="c64" class="avtar2" /></td>
+                        <td id="td65"><img id="p65" class="avtar1"/><img id="c65" class="avtar2" /></td>
+                        <td id="td66"><img id="p66" class="avtar1"/><img id="c66" class="avtar2" /></td>
+                        <td id="td67"><img id="p67" class="avtar1"/><img id="c67" class="avtar2" /></td>
+                        <td id="td68"><img id="p68" class="avtar1"/><img id="c68" class="avtar2" /></td>
+                        <td id="td69"><img id="p69" class="avtar1"/><img id="c69" class="avtar2" /></td>
+                        <td id="td70"><img id="p70" class="avtar1"/><img id="c70" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td60"><img id="p60" class="avtar1"/><img id="c60" class="avtar2" /></td>
+                        <td id="td59"><img id="p59" class="avtar1"/><img id="c59" class="avtar2" /></td>
+                        <td id="td58"><img id="p58" class="avtar1"/><img id="c58" class="avtar2" /></td>
+                        <td id="td57"><img id="p57" class="avtar1"/><img id="c57" class="avtar2" /></td>
+                        <td id="td56"><img id="p56" class="avtar1"/><img id="c56" class="avtar2" /></td>
+                        <td id="td55"><img id="p55" class="avtar1"/><img id="c55" class="avtar2" /></td>
+                        <td id="td54"><img id="p54" class="avtar1"/><img id="c54" class="avtar2" /></td>
+                        <td id="td53"><img id="p53" class="avtar1"/><img id="c53" class="avtar2" /></td>
+                        <td id="td52"><img id="p52" class="avtar1"/><img id="c52" class="avtar2" /></td>
+                        <td id="td51"><img id="p51" class="avtar1"/><img id="c51" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td41"><img id="p41" class="avtar1"/><img id="c41" class="avtar2" /></td>
+                        <td id="td42"><img id="p42" class="avtar1"/><img id="c42" class="avtar2" /></td>
+                        <td id="td43"><img id="p43" class="avtar1"/><img id="c43" class="avtar2" /></td>
+                        <td id="td44"><img id="p44" class="avtar1"/><img id="c44" class="avtar2" /></td>
+                        <td id="td45"><img id="p45" class="avtar1"/><img id="c45" class="avtar2" /></td>
+                        <td id="td46"><img id="p46" class="avtar1"/><img id="c46" class="avtar2" /></td>
+                        <td id="td47"><img id="p47" class="avtar1"/><img id="c47" class="avtar2" /></td>
+                        <td id="td48"><img id="p48" class="avtar1"/><img id="c48" class="avtar2" /></td>
+                        <td id="td49"><img id="p49" class="avtar1"/><img id="c49" class="avtar2" /></td>
+                        <td id="td50"><img id="p50" class="avtar1"/><img id="c50" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td40"><img id="p40" class="avtar1"/><img id="c40" class="avtar2" /></td>
+                        <td id="td39"><img id="p39" class="avtar1"/><img id="c39" class="avtar2" /></td>
+                        <td id="td38"><img id="p38" class="avtar1"/><img id="c38" class="avtar2" /></td>
+                        <td id="td37"><img id="p37" class="avtar1"/><img id="c37" class="avtar2" /></td>
+                        <td id="td36"><img id="p36" class="avtar1"/><img id="c36" class="avtar2" /></td>
+                        <td id="td35"><img id="p35" class="avtar1"/><img id="c35" class="avtar2" /></td>
+                        <td id="td34"><img id="p34" class="avtar1"/><img id="c34" class="avtar2" /></td>
+                        <td id="td33"><img id="p33" class="avtar1"/><img id="c33" class="avtar2" /></td>
+                        <td id="td32"><img id="p32" class="avtar1"/><img id="c32" class="avtar2" /></td>
+                        <td id="td31"><img id="p31" class="avtar1"/><img id="c31" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td21"><img id="p21" class="avtar1"/><img id="c21" class="avtar2" /></td>
+                        <td id="td22"><img id="p22" class="avtar1"/><img id="c22" class="avtar2" /></td>
+                        <td id="td23"><img id="p23" class="avtar1"/><img id="c23" class="avtar2" /></td>
+                        <td id="td24"><img id="p24" class="avtar1"/><img id="c24" class="avtar2" /></td>
+                        <td id="td25"><img id="p25" class="avtar1"/><img id="c25" class="avtar2" /></td>
+                        <td id="td26"><img id="p26" class="avtar1"/><img id="c26" class="avtar2" /></td>
+                        <td id="td27"><img id="p27" class="avtar1"/><img id="c27" class="avtar2" /></td>
+                        <td id="td28"><img id="p28" class="avtar1"/><img id="c28" class="avtar2" /></td>
+                        <td id="td29"><img id="p29" class="avtar1"/><img id="c29" class="avtar2" /></td>
+                        <td id="td30"><img id="p30" class="avtar1"/><img id="c30" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td20"><img id="p20" class="avtar1"/><img id="c20" class="avtar2" /></td>
+                        <td id="td19"><img id="p19" class="avtar1"/><img id="c19" class="avtar2" /></td>
+                        <td id="td18"><img id="p18" class="avtar1"/><img id="c18" class="avtar2" /></td>
+                        <td id="td17"><img id="p17" class="avtar1"/><img id="c17" class="avtar2" /></td>
+                        <td id="td16"><img id="p16" class="avtar1"/><img id="c16" class="avtar2" /></td>
+                        <td id="td15"><img id="p15" class="avtar1"/><img id="c15" class="avtar2" /></td>
+                        <td id="td14"><img id="p14" class="avtar1"/><img id="c14" class="avtar2" /></td>
+                        <td id="td13"><img id="p13" class="avtar1"/><img id="c13" class="avtar2" /></td>
+                        <td id="td12"><img id="p12" class="avtar1"/><img id="c12" class="avtar2" /></td>
+                        <td id="td11"><img id="p11" class="avtar1" /><img id="c11" class="avtar2" /></td>
+                    </tr>
+                    <tr>
+                        <td id="td1" ><img id="p1" class="avtar1"/><img id="c1" class="avtar2" /></td>
+                        <td id="td2"><img id="p2" class="avtar1"/><img id="c2" class="avtar2" /></td>
+                        <td id="td3"><img id="p3" class="avtar1"/><img id="c3" class="avtar2" /></td>
+                        <td id="td4"><img id="p4" class="avtar1"/><img id="c4" class="avtar2" /></td>
+                        <td id="td5"><img id="p5" class="avtar1"/><img id="c5" class="avtar2" /></td>
+                        <td id="td6"><img id="p6" class="avtar1"/><img id="c6" class="avtar2" /></td>
+                        <td id="td7"><img id="p7" class="avtar1"/><img id="c7" class="avtar2" /></td>
+                        <td id="td8"><img id="p8" class="avtar1"/><img id="c8" class="avtar2" /></td>
+                        <td id="td9"><img id="p9" class="avtar1"/><img id="c9" class="avtar2" /></td>
+                        <td id="td10"><img id="p10" class="avtar1"/><img id="c10" class="avtar2" /></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="rightside" align="center">
+            <div class="menu" onclick=gotomenu();>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="rightinside" class="rightinside">
+                <img id="snlanimation" class="snl" style="width:100%;height:100%; border-radius: .7em" />
+            </div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="scripts/complayer.js"></script>
+</body>
+</html>

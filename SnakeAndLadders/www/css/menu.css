@@ -1,0 +1,60 @@
+﻿body {
+    text-align: center;
+    background: url('../images/bg5.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+.button {
+    outline: none;
+    padding: .3em 1.5em .3em;
+    font-family: 'Comic Sans MS';
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #e6e6e6;
+    background-color: #005580;
+    border-radius: .9em;
+    border: 1px solid #002633;
+    border-bottom: 4px solid #002633;
+    text-shadow: 0px 2px 4px #000000;
+    margin-top: 2%;
+}
+
+    .button:hover {
+        background-color: none;
+        text-shadow: 0px 1px 2px #002633;
+    }
+
+    .button:active {
+        background-color: #002633;
+        transform: translateY(3px);
+        text-shadow: 0px 2px 4px #002633;
+    }
+
+
+.leftside{
+    float:left;
+    width:50%;
+    height:50%;
+    position:fixed;
+    margin-top:3%;
+}
+.rightside{
+    float:right;
+    width:70%;
+    margin-top:10%;
+    height:50%;
+    
+}
+
+div.middle {
+    width: 75%;
+    height: 65%;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

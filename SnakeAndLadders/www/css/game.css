@@ -1,0 +1,189 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url('../images/bg1.jpg') no-repeat;
+    background-size: cover;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    /*overflow:scroll;*/
+}
+
+div.leftside {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-left: 0.5%;
+}
+
+div.leftinside {
+    height: 40%;
+    border-radius: .9em;
+    border: 4px solid #3d5c5c;
+    border-bottom: 6px solid #3d5c5c;
+    margin-top: 60%;
+}
+
+
+#player {
+    width: 96%;
+    background-color: #669999;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    font-size: large;
+    padding: 2%;
+    border-radius: .6em;
+    color: lightgray;
+    background-image: url('../images/staticAvtarc.gif');
+    background-repeat: no-repeat;
+    background-size:17%;
+    background-position-x:90%;
+
+}
+
+.youDraw {
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    text-shadow: 0px 2px 4px #000000;
+    font-weight: bold;
+    font-size: large;
+    color: lightgray;
+}
+
+.playerturn {
+    font-family: 'Comic Sans MS';
+    font-size: medium;
+    color: lightgray;
+}
+
+div.center {
+    width: 60%;
+    float: left;
+    height: 100%;
+}
+
+div.rightside {
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin-left:-4%;
+}
+
+div.rightinside {
+    height: 60%;
+    border-radius: .9em;
+    border: 4px solid #3d5c5c;
+    border-bottom: 6px solid #3d5c5c;
+    margin-top: 45%;
+    width:110%;
+    visibility:hidden;
+}
+
+.menu {
+    float: right;
+    margin-right: -10%;
+    cursor: pointer;
+}
+
+.bar {
+    width:30px;
+    height:3px;
+    background-color: #3d5c5c;
+    margin: 20% 0;
+}
+
+table {
+    max-width: 969px;
+    max-width: 968px;
+    width: 91%;
+    height: 90%;
+    margin-left: 1%;
+    margin-top: 7%;
+}
+
+table, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-style: solid;
+}
+
+td {
+    width: 10%;
+    height: 10%;
+}
+
+.button {
+    outline: none;
+    padding: .3em 1.5em .3em;
+    font-family: 'Comic Sans MS';
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #527a7a;
+    border-radius: .9em;
+    border: 1px solid #3d5c5c;
+    border-bottom: 4px solid #334d4d;
+    text-shadow: 0px 2px 4px #000000;
+}
+
+    .button:hover {
+        background-color: none;
+        text-shadow: 0px 1px 2px #334d4d;
+    }
+
+    .button:active {
+        background-color: #334d4d;
+        transform: translateY(3px);
+        text-shadow: 0px 2px 4px #334d4d;
+    }
+
+.youDraw {
+    text-align: center;
+    font-family: 'Pacifico';
+    text-shadow: 0px 2px 4px #000000;
+    font-weight: bold;
+    font-size: xx-large;
+    color: lightgray;
+}
+
+.avtar {
+    z-index: 1;
+    width: 2.5%;
+    height: 6%;
+    visibility: hidden;
+    margin-top: -1%;
+    margin-left: 0.1%;
+    position: absolute;
+}
+
+
+/*.popupCongrats{
+    z-index: 4;
+    bottom: 50%;
+    right: 50%;
+    position:absolute;
+    /*margin-top, margin:0 auto;*/
+   /* border-radius: 6px;*/
+    /*background-image: url(../images/congrats.jpg);*/
+   /* background: #fff;
+    visibility:hidden;
+    width:60%;
+    height:60%;
+    
+}
+    .modalBg{
+        background: rgba(0, 0, 0, 0.40);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+}*/

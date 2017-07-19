@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>User Name Page</title>
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class = "middle" align="center">
+        <form id="nameForm">
+            <input id="nameField" type="text" value="" placeholder="Enter name" onfocus="onfocusNameField();" onblur="outfocusNameField();"/>
+            <input id="playButton" type="button" class="button" style="margin-top:5%;" value="PLAY" size="1" onclick="checkName();"  onkeydown="enterPressed(this, event)" />
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
